@@ -1,6 +1,9 @@
 package com.semicolon.africa.notemanagementsystem.web;
 
-@org.springframework.stereotype.Controller
-public class Controller {
+import org.springframework.stereotype.Controller;
+
+
+@Controller
+public class UserController {
 
 }

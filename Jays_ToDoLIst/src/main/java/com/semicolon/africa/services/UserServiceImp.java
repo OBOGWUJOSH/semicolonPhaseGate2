@@ -42,35 +42,25 @@ public class UserServiceImp implements UserService {
     }
 
 
-//    public void sendRegistrationEmail(String email) {
-//        JavaMailRequest javaMailRequest = new JavaMailRequest();
-//        javaMailRequest.setTo(email);
-//        javaMailRequest.setMessage("Welcome to my todoApp");
-//        javaMailRequest.setSubject("TodoApp Verification");
-//        javaMailRequest.setFrom(mailConfig.getFromEmail());
-//        mailService.send(javaMailRequest);
-//    }
-
-
-
     @Override
     public LoginUserResponse login(LoginUserRequest loginRequest) {
         User user = userRepository.findByUsername(loginRequest.getUsername().toLowerCase());
         if (user == null || !checkPassword(loginRequest.getPassword())) {
             throw new TodoAppException("Invalid username or password");
         }
-
         user.setLoggedIn(true);
         userRepository.save(user);
 
         return new LoginUserResponse("Successful Login");
     }
 
+
     private boolean checkPassword(String password) {
         if (password.length() > 8) {
         }
         return true;
     }
+
 
     @Override
     public LogoutUserResponse logout(LogoutUserRequest logoutUserRequest) {
@@ -82,8 +72,21 @@ public class UserServiceImp implements UserService {
         user.setLoggedIn(false);
         userRepository.save(user);
 
-        return new LogoutUserResponse("Successful Logout");
+        return new LogoutUserResponse("Successfully Logged out");
     }
+
+
+
+
+//    public void sendRegistrationEmail(String email) {
+//        JavaMailRequest javaMailRequest = new JavaMailRequest();
+//        javaMailRequest.setTo(email);
+//        javaMailRequest.setMessage("Welcome to my todoApp");
+//        javaMailRequest.setSubject("TodoApp Verification");
+//        javaMailRequest.setFrom(mailConfig.getFromEmail());
+//        mailService.send(javaMailRequest);
+//    }
+
 
 
 
@@ -93,9 +96,10 @@ public class UserServiceImp implements UserService {
     }
 
 
+
     private static User userMapper(String userName, String password, String email, String s) {
         User user = new User();
-        user.setUsername(userName);
+        user.setUserName(userName);
         user.setPassword(password);
         user.setEmail(email);
         user.setLoggedIn(false);

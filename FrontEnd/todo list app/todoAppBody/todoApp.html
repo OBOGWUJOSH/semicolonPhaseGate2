@@ -1,10 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>toDoApp</title>
+        <link rel="stylesheet" href="./bodyStyle.css">
+        <link rel="favicon" href="../images/note.png" type="favicon">
+    </head>
+    <body>
+
+        <div class="sticky_Banner">
+            <div src="logo_image">
+                <img class="logo_image" src="../images/MEMO -black and yellow.png" alt="Application_+logo">
+            </div>
+
+            <div class="bannerButton">
+                <div>
+                    <button class="aboutUs" type="button">AboutUs</button>
+                </div>
+                <div>
+                    <button class="contactUs" type="button" >ContactUs</button>
+                </div>
+            </div>
+        </div>
+
+        <div class=task_body>
+
+            <div class = "task_body_inner">
+
+                <div >
+                    <div class="search_bar">
+                        <label for="search"></label>
+                        <input type="text" placeholder="Add a Todo" name="add new Todo">
+                        <button class="buttonbutton"><img class="buttonImage" src="../images/add.png" alt=""></button>
+                    </div>
+                </div>
+            
+                <div>
+
+                    <div class="todoHeader">
+                        <h1>Incomplete Tasks</h1>
+                    </div>
+
+                    <div class="unfinished_task" >
+                        <div><input type="text" placeholder="Remember to go to school" name="" class="textarea1"> </div>
+                        <div><input type="checkbox" name="" class="checkbox" value ="*"></div>
+                        <button class="button2"><img class="button2Image" src="../images/recycle-bin_5543531.png" alt="favicon"></button>
+                    </div>
+
+                    <div class="unfinished_task" >
+                        <div><input type="text" placeholder="Remember to Eat" name="" class="textarea1"> </div>
+                        <div><input type="checkbox" name="" class="checkbox"></div>
+                        <button class="button2"><img class="button2Image" src="../images/recycle-bin_5543531.png" alt="favicon"></button>
+                    </div>
+
+                    <div class="unfinished_task" >
+                        <div><input type="text" placeholder="Remember to be" name="" class="textarea1"> </div>
+                        <div><input type="checkbox"  name="" class="checkbox"></div>
+                        <button class="button2"><img class="button2Image" src="../images/recycle-bin_5543531.png" alt="favicon"> </button>
+                    </div>
+
+                    <div class="unfinished_task" >
+                        <div><input type="text" placeholder="Remember to dance" name="" class="textarea1"> </div>
+                        <div><input type="checkbox" name="" class="checkbox"></div>
+                        <button class="button2"><img class="button2Image" src="../images/recycle-bin_5543531.png" alt="favicon"> </button>
+                    </div>
+
+                    <div>
+                        <div class="todoHeader">
+                            <h1> Completed Tasks </h1>
+                        </div>
+                    
+                    </div>
+
+                    <div class="finished_task" >
+                        <div><input type="text" placeholder="Finished task" name="" class="textarea1"> </div>
+                        <div><input type="checkbox" name="" class="checkbox"></div>
+                        <button class="button2"><img class="button2Image" src="../images/recycle-bin_5543531.png" alt=""> </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div>
+            <footer class="footer">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iusto aliquid repellat sint rem distinctio,
+                    consequatur nemo illum inventore nobis! Aperiam sint explicabo quaerat perferendis accusamus nobis
+                    consequatur, quod veritatis!
+                </h3>
+            </footer>
+        </div>
+    </body>
+    <link rel="javaScriptFunctionFile" href="function.js">
 </html>

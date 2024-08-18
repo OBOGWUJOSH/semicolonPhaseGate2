@@ -19,7 +19,7 @@ import java.util.List;
 public class User {
     @Id
     private String id;
-    private String username;
+    private String userName;
     private String password;
     private String email;
     @DBRef

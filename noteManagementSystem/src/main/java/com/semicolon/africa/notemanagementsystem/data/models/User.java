@@ -22,5 +22,6 @@ public class User {
     private String PhoneNumber;
     private String password;
     private List<Note> lists;
-
+    private boolean LoggedIn;
+    private String deleteNoteQuestionsList;
 }

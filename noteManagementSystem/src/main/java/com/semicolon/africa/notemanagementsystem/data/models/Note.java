@@ -22,5 +22,6 @@ public class Note {
     private String content;
     private LocalDateTime dateCreated;
     private LocalDateTime dateUpdated;
+    private boolean taskStatus;
 
 }

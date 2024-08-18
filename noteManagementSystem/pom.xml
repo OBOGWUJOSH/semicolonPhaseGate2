@@ -49,6 +49,18 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.semicolon.africa</groupId>-->
+<!--            <artifactId>Jays_ToDoLIst</artifactId>-->
+<!--            <version>1.0-SNAPSHOT</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.semicolon.africa</groupId>-->
+<!--            <artifactId>Jays_ToDoLIst</artifactId>-->
+<!--            <version>1.0-SNAPSHOT</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>
